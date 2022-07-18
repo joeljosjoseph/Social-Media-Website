@@ -1,0 +1,94 @@
+CREATE DATABASE socialMedia;
+
+CREATE TABLE tbl_login(
+user_id uuid PRIMARY KEY DEFAULT uuid_generate_v4(),
+user_name VARCHAR(20) NOT NULL,
+user_password VARCHAR(20) NOT NULL,
+user_status VARCHAR(20) NOT NULL
+)
+
+CREATE TABLE tbl_customer (
+	cust_id SERIAL PRIMARY KEY,
+	user_name VARCHAR(25),
+	f_name VARCHAR(25) NOT NULL,
+	m_name VARCHAR(25),
+	l_name VARCHAR(25),
+	ph_no NUMERIC(10),
+	CONSTRAINT fk_customer
+      FOREIGN KEY(user_name) 
+	  REFERENCES tbl_login(user_name)
+)
+
+CREATE TABLE tbl_profile (
+profile_id NUMERIC(10) PRIMARY KEY,
+	cust_id INTEGER NOT NULL,
+	username VARCHAR(10) UNIQUE,
+	bio VARCHAR(255),
+   	CONSTRAINT fk_customer
+      FOREIGN KEY(cust_id) 
+	  REFERENCES tbl_customer(cust_id)
+)
+
+
+CREATE TABLE tbl_friends (
+	friend_id NUMERIC(10) PRIMARY KEY,
+	sender_id INTEGER NOT NULL,
+	receiver_id INTEGER NOT NULL,
+	status VARCHAR(10),
+	CONSTRAINT fk_customer
+      FOREIGN KEY(sender_id) 
+	  REFERENCES tbl_customer(cust_id),
+	CONSTRAINT fk_customer1
+      FOREIGN KEY(receiver_id) 
+	  REFERENCES tbl_customer(cust_id)
+)
+
+
+CREATE TABLE tbl_chat (
+	chat_id NUMERIC(10) PRIMARY KEY,
+	c_from INTEGER NOT NULL,
+	c_to INTEGER NOT NULL,
+	message VARCHAR(10),
+	CONSTRAINT fk_customer
+      FOREIGN KEY(c_from) 
+	  REFERENCES tbl_customer(cust_id),
+	CONSTRAINT fk_customer1
+      FOREIGN KEY(c_to) 
+	  REFERENCES tbl_customer(cust_id)
+)
+
+
+CREATE TABLE tbl_post (
+	post_id NUMERIC(10) PRIMARY KEY,
+	cust_id INTEGER NOT NULL,
+	post_caption VARCHAR(100),
+	CONSTRAINT fk_customer
+      FOREIGN KEY(cust_id) 
+	  REFERENCES tbl_customer(cust_id)
+)
+
+
+CREATE TABLE tbl_like (
+	like_id NUMERIC(10) PRIMARY KEY,
+	cust_id INTEGER NOT NULL,
+	post_id NUMERIC(10),
+	CONSTRAINT fk_customer
+      FOREIGN KEY(cust_id) 
+	  REFERENCES tbl_customer(cust_id),
+	CONSTRAINT fk_post
+      FOREIGN KEY(post_id) 
+	  REFERENCES tbl_post(post_id)
+)
+
+CREATE TABLE tbl_comment (
+	comment_id NUMERIC(10) PRIMARY KEY,
+	cust_id INTEGER NOT NULL,
+	post_id NUMERIC(10) NOT NULL,
+	comment_m VARCHAR(100) NOT NULL,
+	CONSTRAINT fk_customer
+      FOREIGN KEY(cust_id) 
+	  REFERENCES tbl_customer(cust_id),
+	CONSTRAINT fk_post
+      FOREIGN KEY(post_id) 
+	  REFERENCES tbl_post(post_id)
+)

@@ -1,0 +1,529 @@
+
+
+.login-container {
+    height: 100vh;
+    align-items: center;
+    background: url("images/image2.jpg");
+    background-size: 100% 100%;
+    margin-right: 0;
+    
+}
+.register-container {
+    height: 15  0vh;
+    align-items: center;
+    background: url("images/image2.jpg");
+    background-size: 100% 100%;
+    
+}
+.quote-login {
+    margin-left: 70px;
+    text-align: left;
+    
+}
+
+.credentials-container {
+    
+    width: fit-content;
+    height: 100%;
+    border-radius: 7px;
+    padding: 40px 13%;
+    
+}
+@supports((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))){
+    .credentials-container{
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(50px);
+    }
+}
+.credentials-container-main {
+    padding: 200px;
+    padding-top: 120px;
+    padding-right: 100px;
+    margin-left: 100px;
+}
+.login-container-1 {
+    padding-left: 50px;
+}
+
+.login-form{
+    
+    width: fit-content;
+}
+
+.login-input, .login-button {
+    width: 250px;
+    margin-bottom: 25px;
+    margin-top: 5px;
+}
+.login-button, .register-button{
+    margin-bottom: 10px;
+    margin-top: 2px;
+    font-size: large;
+    
+}
+
+.register-input, .register-button {
+    width: 275px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.register-button{
+    margin-top: 15px;
+}
+
+.sidebar-list {
+    color:#26215b;
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.sidebar-list:hover {
+    color: white;
+    background-color: #78548c;
+    
+}
+.active-sidebar {
+    background-color: #26215b !important;
+    color: white !important;
+    
+}
+.active-sidebar:hover {
+    color: white;
+    background-color: #78548c !important;
+    
+}
+ 
+.cust-sidebar {
+    min-height: calc(100vh - 160px);
+    background-color: #EAEAEA ;
+}
+
+.signin-form-color{
+    color: #26215b;
+}
+.customer-sidebar-menu {
+    padding-top: 30px;
+}
+
+#dropdownUser1{
+    padding-left: 7px;
+}
+.submit-button {
+    background-color: #78548c;
+    color: white;
+    font-weight: 500;
+}
+.submit-button:hover {
+    background-color: #26215b;
+    color: white;
+}
+
+.custProfile-form-input{
+    padding-bottom: 10px;
+}
+
+.cust-profile-form {
+    padding-left: 50px;
+    padding-top: 10px;
+}   
+
+.register-logo {
+    max-height: 200px;
+    padding-left: 70px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.submit-button-2 {
+    background-color: #26215b;
+    color: white;
+    font-weight: 400;
+}
+
+.submit-button-2:hover {
+    background-color: #78548c;
+    color: white;
+    
+}
+.cust-sidebar-dropdown {
+    background-color: #26215b;
+    
+}
+.cust-sidebar-dropdown li a {
+    color: white !important;
+}
+.cust-sidebar-dropdown li a:hover {
+    background-color: #78548c;
+}
+.cust-sidebar-dropdown li button {
+    color: white !important;
+}
+.cust-sidebar-dropdown li button:hover {
+    background-color: #78548c;
+}
+.card-img-top {
+    height:380px ;
+    width: 100%;
+    padding: 2px;
+    border-top-left-radius: 20px ;
+    border-top-right-radius: 20px;
+}
+
+.friend_image {
+    height: 50px;
+    width: 50px;
+}
+
+.friend_remove_button {
+    height: fit-content;
+    margin: auto 0;
+}
+.card-img-top-home{
+    height:500px ;
+    width: 100%;
+    padding: 2px;
+    border-top-left-radius: 5px ;
+    border-top-right-radius: 5px;
+}
+
+.blue-font {
+    color: #26215b;
+    transition: .5s;
+}
+.blue-font:hover {
+    transition: ease-in-out .5s;
+    color: #78548c;
+}
+
+.home-friend-box{
+    background-color: #EAEAEA ;
+    border-radius: 3px;
+    height: fit-content;
+    
+}
+
+.navbar{
+    box-shadow: 0px 5px 10px #26215b;
+    margin-top: 5px;
+    z-index: 1;
+    transition: .3s;
+    
+}
+.navbar:hover {
+    box-shadow: 0px 5px 10px #78548c;
+    transition: .3s;
+}
+
+.form-control:focus{
+    color: #78548c;
+    border-color: #ffffff;
+    box-shadow: 0px 1px 5px #78548c;   
+}
+
+.add-friend-card-home{
+    max-height: fit-content;
+}
+
+
+.add-friend-card-home img{
+    max-height: 30px;
+}
+
+.add-friend-card-home-div {
+    padding: 10px;
+}
+
+.post-caption{
+    font-size: 16px;
+    margin: 1px;
+}
+
+.comment-modal-pfp{
+    max-width: 30px;
+    max-height: 30px;
+    border-radius: 50%;
+}
+
+.imgAddPost {
+    width: 45%;
+    height: 45%;
+    border-radius: 0.3rem;
+    cursor: pointer;
+  }
+  .dropdown-nav-notification{
+    width: fit-content;
+    max-height: 180px;
+    overflow-y: scroll;
+    margin-right: 6rem;
+  }
+  .navbar-friend-accept{
+    background-color: #26215b;
+    color: white;
+    font-weight: 400;
+    margin-left: 3rem;
+  }
+  .navbar-friend-accept:hover {
+    background-color: #78548c;
+    color: white;
+}
+.chat-sidebar-card{
+    width: 100%;
+    background-color: #EAEAEA;
+    border: none;
+}
+.chat-sidebar-card img{
+    max-height: 55px;
+}
+.sidebar-list-chat {
+    color:#26215b;
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.chat-sidebar-card-div{
+    padding: 8px;
+}
+.chat-sidebar-card-text {
+    padding: 10px;
+    padding-left: 5px;
+    font-size: large;
+    font-weight: 400;
+}
+.chat-sidebar-card:hover {
+    background-color: white;
+}
+.chat{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.chatbox-card{
+    width: 100%;
+    border-radius: 15px !important;
+
+}
+.chatbox-card img {
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+}
+
+.contacts_body{
+    padding:  0.75rem 0 !important;
+    overflow-y: auto;
+    white-space: nowrap;
+}
+.msg_card_body{
+    overflow-y: auto;
+
+}
+
+.card-header{
+    border-radius: 15px 15px 0 0 !important;
+    border-bottom: 0 !important;
+}
+.card-footer{
+border-radius: 0 0 15px 15px !important;
+    border-top: 0 !important;
+}
+.container{
+    align-content: center;
+}
+.search{
+    border-radius: 15px 0 0 15px !important;
+    background-color: rgba(0,0,0,0.3) !important;
+    border:0 !important;
+    color:white !important;
+}
+.search:focus{
+     box-shadow:none !important;
+   outline:0px !important;
+}
+.type_msg{
+    background-color:#EAEAEA !important;
+    border:0 !important;
+    color:white !important;
+    height: auto !important;
+    overflow-y: auto;
+}
+    .type_msg:focus{
+     box-shadow:none !important;
+   outline:0px !important;
+}
+.attach_btn{
+border-radius: 15px 0 0 15px !important;
+background-color: #EAEAEA !important;
+    border:0 !important;
+    color: white !important;
+    cursor: pointer;
+}
+.send_btn{
+border-radius: 0 15px 15px 0 !important;
+background-color: #EAEAEA !important;
+    border:0 !important;
+    color: white !important;
+    cursor: pointer;
+}
+.search_btn{
+    border-radius: 0 15px 15px 0 !important;
+    background-color: #EAEAEA !important;
+    border:0 !important;
+    color: white !important;
+    cursor: pointer;
+}
+.contacts{
+    list-style: none;
+    padding: 0;
+}
+.contacts li{
+    width: 100% !important;
+    padding: 5px 10px;
+    margin-bottom: 15px !important;
+}
+.active{
+    background-color: rgba(0,0,0,0.3);
+}
+.user_img{
+    height: 70px;
+    width: 70px;
+
+}
+.user_img_msg{
+    height: 40px;
+    width: 40px;
+
+}
+.img_cont{
+    position: relative;
+    height: 70px;
+    width: 70px;
+}
+.img_cont_msg{
+    height: 40px;
+    width: 40px;
+}
+.online_icon{
+position: absolute;
+height: 15px;
+width:15px;
+background-color: #4cd137;
+border-radius: 50%;
+bottom: 0.2em;
+right: 0.4em;
+border:1.5px solid white;
+}
+.offline{
+background-color: #c23616 !important;
+}
+.user_info{
+margin-top: 10px;
+margin-bottom: auto;
+margin-left: 15px;
+}
+.user_info span{
+font-size: 20px;
+font-weight: 500;
+color: #26215b;
+}
+.user_info p{
+font-size: 10px;
+color: rgba(255,255,255,0.6);
+}
+.video_cam{
+margin-left: 50px;
+margin-top: 5px;
+}
+.video_cam span{
+color: white;
+font-size: 20px;
+cursor: pointer;
+margin-right: 20px;
+}
+.msg_container{
+margin-top: auto;
+margin-bottom: auto;
+margin-left: 10px;
+border-radius: 25px;
+color: white;
+background: url("images/image2.jpg");
+padding: 10px;
+position: relative;
+}
+.msg_container_send{
+margin-top: auto;
+margin-bottom: auto;
+border-radius: 25px;
+background: url("images/image2.jpg");
+color: white;
+padding: 10px;
+position: relative;
+}
+.msg_time{
+position: absolute;
+left: 0;
+bottom: -15px;
+color: rgba(255,255,255,0.5);
+font-size: 10px;
+}
+.msg_time_send{
+position: absolute;
+right:0;
+bottom: -15px;
+color: rgba(255,255,255,0.5);
+font-size: 10px;
+}
+.msg_head{
+position: relative;
+}
+#action_menu_btn{
+position: absolute;
+right: 10px;
+top: 10px;
+color: white;
+cursor: pointer;
+font-size: 20px;
+}
+.action_menu{
+z-index: 1;
+position: absolute;
+padding: 15px 0;
+background-color: rgba(0,0,0,0.5);
+color: white;
+border-radius: 15px;
+top: 30px;
+right: 15px;
+display: none;
+}
+.action_menu ul{
+list-style: none;
+padding: 0;
+margin: 0;
+}
+.action_menu ul li{
+width: 100%;
+padding: 10px 15px;
+margin-bottom: 5px;
+}
+.action_menu ul li i{
+padding-right: 10px;
+
+}
+.action_menu ul li:hover{
+cursor: pointer;
+background-color: rgba(0,0,0,0.2);
+}
+@media(max-width: 576px){
+.contacts_card{
+margin-bottom: 15px !important;
+}
+}
+
+.add-post-image{
+    /* max-height: 45% !important; */
+    max-width: 45%;
+    
+}
+
+.profile_image{
+    max-width: 10%;
+}
